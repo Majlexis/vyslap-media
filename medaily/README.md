@@ -10,8 +10,8 @@ Každá výzva má svoj priečinok:
 
 | Výzva | Medaila | Stuha |
 | --- | --- | --- |
-| Novoročných 100 | ✅ | ✅ |
-| Valentínska dvojica | ✅ | ✅ (2 ks na pár) |
+| Novoročných 100 | ✅ finálna | ✅ finálna |
+| Valentínska dvojica | ✅ finálna | ✅ finálna (2 ks na pár) |
 | Hradná výzva 2027 | ✅ | – |
 | Tatranské plesá 2027 | ✅ | – |
 | Cesta SNP 2027 | ✅ | – |
