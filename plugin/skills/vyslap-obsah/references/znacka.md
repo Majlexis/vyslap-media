@@ -15,7 +15,7 @@
 - **Počíta sa chôdza, beh aj turistika** – nemusíš byť bežec, stačí ísť von
 - **Nápadité výzvy a medaily** – napr. dve polovice medaily, ktoré do seba zapadnú
 - **Skutočná kovová medaila** s vlastným dizajnom, poslaná do Z-BOXu
-- **Pomáhame útulku** – za každú splnenú výzvu darujeme 1 € útulku (Valentínska dvojica za oboch = 1 €), cieľ zbierky 200 €; útulok sa bude meniť, konkrétny názov [DOPLNIŤ, keď bude vybraný – dovtedy píšeme len „útulku“]
+- **Pomáhame útulku** – za každú splnenú výzvu darujeme 1 € útulku (Valentínska dvojica za oboch = 1 €), cieľ zbierky 200 €; útulok Alex vyberie až po vyzbieraní sumy (útulky sa budú meniť) – v obsahu píšeme len „útulku“, názov nevymýšľame a nepýtame sa naň
 
 ⚠️ Konkurenciu nikdy nemenujeme a neohovárame.
 ⚠️ Prepojenie so Stravou ani automatické overenie zatiaľ NESPOMÍNAME – nie je schválené od Stravy.
