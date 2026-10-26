@@ -15,7 +15,7 @@
 - **Počíta sa chôdza, beh aj turistika** – nemusíš byť bežec, stačí ísť von
 - **Nápadité výzvy a medaily** – napr. dve polovice medaily, ktoré do seba zapadnú
 - **Skutočná kovová medaila** s vlastným dizajnom, poslaná do Z-BOXu
-- **Pomáhame útulku** – časť z každej splnenej výzvy [DOPLNIŤ – suma a názov útulku]
+- **Pomáhame útulku** – za každú splnenú výzvu darujeme 1 € útulku (Valentínska dvojica za oboch = 1 €), cieľ 1 000 €; útulok sa bude meniť, konkrétny názov [DOPLNIŤ, keď bude vybraný – dovtedy píšeme len „útulku“]
 
 ⚠️ Konkurenciu nikdy nemenujeme a neohovárame.
 ⚠️ Prepojenie so Stravou ani automatické overenie zatiaľ NESPOMÍNAME – nie je schválené od Stravy.
@@ -92,8 +92,20 @@ TikTok a YouTube Shorts zatiaľ nerobíme.
 - 49,99 € za oboch + poštovné od 3,50 €, obe polovice do jedného Z-BOXu
 - Odkaz: vyslapsimedailu.sk/vyzvy/valentinska-dvojica
 
+**Termíny predaja**
+- Predaj oboch výziev od 15. 11. 2026
+- Novoročných 100: kúpiť sa dá do 15. 1. 2027
+- Valentínska dvojica: kúpiť sa dá do 14. 2. 2027
+
+**Výzva ako darček**
+- Pri nákupe sa zvolí „Ako darček“ a zadá sa meno a e-mail obdarovaného
+- Obdarovanému príde e-mail; keď sa zaregistruje / prihlási, výzvu má vo svojom účte
+- Medaila sa posiela kupujúcemu (do jeho Z-BOXu), aby ju mohol odovzdať
+
+**Organizátor**
+- Živnosť je založená, platná od 14. 11. 2026 – je organizátorom súťaží (žrebovaní) a platiteľom reklamy. Obchodné meno a IČO: [DOPLNIŤ]
+
 **Všeobecne**
-- Predaj od 15. 11. 2026, výzvu možno kúpiť aj ako darček
 - Poštovné: od 3,50 € SK, 4,20 € CZ
 - Ďalšie výzvy: [DOPLNIŤ, keď budú]
 
@@ -101,6 +113,7 @@ TikTok a YouTube Shorts zatiaľ nerobíme.
 - Nespomíname Stravu, Garmin ani automatické overenie, kým to nie je schválené a spustené.
 - Nesľubujeme, čo web ešte nevie (rebríčky, mapy, tímy).
 - Žiadne vymyslené ceny, dátumy, účastníci, recenzie ani čísla – len fakty z bodu 9.
-- Cudzie fotky len so súhlasom, deti len so súhlasom rodiča.
+- Cudzie fotky len so súhlasom, deti len so súhlasom rodiča. Stories, v ktorých nás účastníci označia, Alex môže zdieľať (repost) – iné fotky len s výslovným súhlasom.
+- Na webe sa nepoužívajú slová „súťaž“ a „preteky“ ani rebríčky (kvôli pravidlám Strava API). Na IG/FB môžeme robiť súťaže, ale na webe ich voláme **žrebovanie** a výherca sa vždy losuje.
 - Žiadne nebezpečné rady (pri zimných túrach, tme či otužovaní vždy bezpečnostná poznámka).
 - Každý post a reklamu pred zverejnením schvaľuje Alex.
