@@ -202,7 +202,14 @@ h2.podnadpis {{ font-weight: 700; font-size: 80px; line-height: 1.2; color: {KRE
 /* story – viac vzduchu hore/dole kvôli rozhraniu Instagramu */
 .story .hlavicka {{ height: 330px; padding-top: 150px; }}
 .story .pata {{ height: 300px; padding-bottom: 140px; }}
-.story .t-uvod .spodok {{ height: 520px; }}
+.story .t-uvod .spodok {{ height: 560px; }}
+.story .t-uvod .riadok {{ font-size: 104px; }}
+.story .t-uvod .pod {{ font-size: 44px; }}
+.story .t-uvod .velke {{ font-size: 200px; }}
+.story .t-uvod .velke-popis {{ font-size: 44px; }}
+.story .t-uvod .dalej {{ font-size: 34px; }}
+.t-uvod .spodok {{ position: relative; }}
+.t-uvod .spodok .ikona {{ top: 40px; right: 72px; bottom: auto; width: 170px; height: 170px; }}
 .story .panel {{ padding: 70px 72px 80px; }}
 .story .stitok {{ font-size: 36px; margin-bottom: 34px; }}
 .story h1 {{ font-size: 104px; line-height: 1.18; }}
@@ -264,7 +271,12 @@ def slide_html(s: dict, i: int, n: int, base: Path) -> str:
         vp = f'<div class="velke-popis">{md(s["velke_popis"])}</div>' if s.get("velke_popis") else ""
         dalej = s.get("dalej", "Posuň ďalej →" if n > 1 else "")
         d = f'<div class="dalej">{md(dalej)}</div>' if dalej else ""
-        telo = f'{hlavicka()}<div class="vrch krem">{r}{pod}</div><div class="spodok">{velke}{vp}{d}</div>'
+        # ikona pri úvode patrí do zeleného pásu vpravo hore, aby nikdy neprekryla text
+        ik_uvod = ""
+        if s.get("ikona") and s.get("ikona_pozicia", "pravo-dole") == "pravo-dole":
+            ik_uvod = ikona_html(s["ikona"], "v-pase", True)
+            s = {**s, "ikona": ""}
+        telo = f'{hlavicka()}<div class="vrch krem">{r}{pod}</div><div class="spodok">{velke}{vp}{d}{ik_uvod}</div>'
     elif typ == "zoznam":
         pol = "".join(
             f'<div class="polozka"><div class="c">{k + 1:02d}</div><div class="ciara"></div>'
