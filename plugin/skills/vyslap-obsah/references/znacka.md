@@ -73,8 +73,17 @@
 |---|---|---|
 | Instagram | carousel, reels, stories | ✅ pripojený |
 | Facebook | to isté (reel s titulkom) | ✅ pripojený + Facebook Ads |
+| TikTok | reels (video) + carousely ako fotopost | ✅ pripojený (od 27. 10. 2026, účet vyslapsimedailu) |
 
-TikTok a YouTube Shorts zatiaľ nerobíme.
+YouTube Shorts zatiaľ nerobíme.
+
+**TikTok – pravidlá:**
+- Každý post ide na IG + FB + TikTok; TikTok ako **samostatný post** s vlastným popisom (rovnaké médiá).
+- Popis kratší, odkaz nie je klikateľný → „Odkaz v bio.“ / „Viac cez odkaz v bio.“ (v bio: vyslapsimedailu.sk). Otázka do komentárov a 5 hashtagov ostávajú.
+- Fotoposty (carousel, obrázok): `title` krátky (do ~40 znakov), `autoAddMusic: true`.
+- Predajné posty: `commercialContentOwnBrand: true` (obsah vlastnej značky).
+- Stories na TikTok nedávame.
+- Ideálny formát 9:16; 4:5 z IG je zatiaľ OK, nové carousely pre TikTok časom renderovať aj na výšku.
 
 **Rytmus:** podľa potreby. Doteraz cca každý 2. deň o **18:30**, IG + FB naraz.
 **Prvé dáta:** carousel (234 dosah) vs. jeden obrázok (134) – carousely zatiaľ fungujú lepšie. Overíme na viac postoch.

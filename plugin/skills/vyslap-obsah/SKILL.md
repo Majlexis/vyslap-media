@@ -101,6 +101,7 @@ hook + emoji → 2–3 krátke odseky → (💶/📅 pri predaji) → otázka do
    Ak repo nie je v sedení, najprv `add_repo` (owner `Majlexis`, repo `vyslap-media`, access `push`). Skript vráti `raw.githubusercontent.com` odkazy. Do repa nikdy nedávaj nič súkromné – je verejné.
 2. **Naplánuj v Metricoole** (`createScheduledPost`, blogId `7395399`, timezone `Europe/Bratislava`):
    - `providers`: instagram + facebook; `media`: odkazy z kroku 1 v poradí slidov
+   - **TikTok:** vždy aj samostatný post len s `tiktok` v ten istý čas, s TikTok popisom (pravidlá v profile značky, bod 8). `tiktokData`: `title`, pri fotopostoch `autoAddMusic: true`, pri predajných `commercialContentOwnBrand: true`. Stories na TikTok nie.
    - carousel/post: `instagramData.type` `POST`, `facebookData.type` `POST`
    - reel: `REEL` na oboch, `facebookData.title` = krátky titulok, `videoThumbnailUrl` = nahraný `*_obal.jpg`
    - story: `STORY` na oboch, **bez textu**; nálepky Alex pridá ručne → `autoPublish: false` (Metricool mu pošle notifikáciu do appky)
