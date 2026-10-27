@@ -122,8 +122,8 @@ if __name__ == "__main__":
 def finalna(out):
     import stuhy as st
     from stuhy import DLZKA
-    svg, s = st.harok("Stuha – 12 vrcholov za rok", "Návrh stuhy · 25 × 900 mm · variant Veľká 12", KREM, v8,
-                      [("Krémová stuha", KREM), ("Zelená", ZEL), ("Žltá", ZLTA)], ks="1 ks na medailu")
+    svg, s = st.harok("Stuha – 12 vrcholov za rok", "Návrh stuhy · 25 × 900 mm · variant Mozaika", ZEL, v9,
+                      [("Tmavozelená", ZEL), ("Zelená", "#1f7a5c"), ("Tyrkysová", TYRK), ("Žltá", ZLTA)], ks="1 ks na medailu")
     uloz(svg, f"{out}/stuha-12-vrcholov-2027.png")
     uloz(f'<svg xmlns="http://www.w3.org/2000/svg" width="9000" height="250" viewBox="0 0 {DLZKA} {SIRKA}">{s}</svg>', f"{out}/stuha-12-vrcholov-2027-tlac.png")
     open(f"{out}/stuha-12-vrcholov-2027-tlac.svg", "w").write(
