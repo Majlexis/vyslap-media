@@ -10,10 +10,10 @@
 </linearGradient></defs><rect width="900" height="25" fill="#8a1a2b"/><rect y="1.1" width="900" height="0.45" fill="#f6f3e9"/><rect y="23.45" width="900" height="0.45" fill="#f6f3e9"/><g><g transform="translate(16,12.5) rotate(0) scale(0.8)">
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#f6f3e9"/></g><g transform="translate(46,12.5)">
   <rect x="-13.5" y="-9.5" width="27" height="19" rx="0.6" fill="#f6f3e9"/>
-  <circle cx="5.4" cy="-2.28" r="3.2300000000000004" fill="#ffca1b"/>
-  <path d="M-9.719999999999999,5.7 L-2.16,-4.18 L5.4,5.7 Z" fill="#063f2d"/>
-  <path d="M-0.54,5.7 L3.7800000000000002,0.38 L8.64,5.7 Z" fill="#063f2d"/>
-  <path d="M-0.54,5.7 L3.7800000000000002,0.38" stroke="#f6f3e9" stroke-width="0.6"/>
+  <svg x="-9.719999999999999" y="-6.46" width="19.439999999999998" height="12.92" viewBox="6 6 139 91" preserveAspectRatio="xMidYMid meet">
+    <circle cx="118" cy="27" r="19" fill="#ffca1b"/>
+    <path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="#063f2d"/>
+  </svg>
 </g><g transform="translate(72,12.5) rotate(0) scale(0.22000000000000003)">
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#f6f3e9"/></g><g transform="translate(78,12.5) rotate(0) scale(0.28)">
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#ffca1b"/></g><g transform="translate(84,12.5) rotate(0) scale(0.22000000000000003)">
@@ -25,10 +25,10 @@
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#ffca1b"/></g></g><g transform="translate(450.0,0)"><g transform="translate(434.0,12.5) rotate(0) scale(0.8)">
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#f6f3e9"/></g><g transform="translate(404.0,12.5)">
   <rect x="-13.5" y="-9.5" width="27" height="19" rx="0.6" fill="#f6f3e9"/>
-  <circle cx="5.4" cy="-2.28" r="3.2300000000000004" fill="#ffca1b"/>
-  <path d="M-9.719999999999999,5.7 L-2.16,-4.18 L5.4,5.7 Z" fill="#063f2d"/>
-  <path d="M-0.54,5.7 L3.7800000000000002,0.38 L8.64,5.7 Z" fill="#063f2d"/>
-  <path d="M-0.54,5.7 L3.7800000000000002,0.38" stroke="#f6f3e9" stroke-width="0.6"/>
+  <svg x="-9.719999999999999" y="-6.46" width="19.439999999999998" height="12.92" viewBox="6 6 139 91" preserveAspectRatio="xMidYMid meet">
+    <circle cx="118" cy="27" r="19" fill="#ffca1b"/>
+    <path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="#063f2d"/>
+  </svg>
 </g><g transform="translate(378.0,12.5) rotate(0) scale(0.22000000000000003)">
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#f6f3e9"/></g><g transform="translate(372.0,12.5) rotate(0) scale(0.28)">
 <path d="M0,8 C-10,0 -10,-8 -5,-9 C-2,-9.5 0,-7 0,-5 C0,-7 2,-9.5 5,-9 C10,-8 10,0 0,8 Z" fill="#ffca1b"/></g><g transform="translate(366.0,12.5) rotate(0) scale(0.22000000000000003)">

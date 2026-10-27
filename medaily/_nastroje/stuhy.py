@@ -5,16 +5,18 @@ import cairosvg
 DLZKA, SIRKA = 900, 25        # mm
 POL = DLZKA / 2
 KREM, ZLTA, TMZEL = "#f6f3e9", "#ffca1b", "#063f2d"
+MODRA = "#0f4a6e"
 
 
 def logo(cx, cy, uhol=0, w=27, h=19):
-    """Krémový štítok s horami a slnkom (ako na medaile)."""
+    """Krémový štítok so skutočným logom (public/logo.svg z webu: tri hory + slnko)."""
+    pad_x, pad_y = w * 0.14, h * 0.16
     return f'''<g transform="translate({cx},{cy})">
   <rect x="{-w/2}" y="{-h/2}" width="{w}" height="{h}" rx="0.6" fill="{KREM}"/>
-  <circle cx="{w*0.2}" cy="{-h*0.12}" r="{h*0.17}" fill="{ZLTA}"/>
-  <path d="M{-w*0.36},{h*0.3} L{-w*0.08},{-h*0.22} L{w*0.2},{h*0.3} Z" fill="{TMZEL}"/>
-  <path d="M{-w*0.02},{h*0.3} L{w*0.14},{h*0.02} L{w*0.32},{h*0.3} Z" fill="{TMZEL}"/>
-  <path d="M{-w*0.02},{h*0.3} L{w*0.14},{h*0.02}" stroke="{KREM}" stroke-width="0.6"/>
+  <svg x="{-w/2+pad_x}" y="{-h/2+pad_y}" width="{w-2*pad_x}" height="{h-2*pad_y}" viewBox="6 6 139 91" preserveAspectRatio="xMidYMid meet">
+    <circle cx="118" cy="27" r="19" fill="{ZLTA}"/>
+    <path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="{TMZEL}"/>
+  </svg>
 </g>'''
 
 
@@ -93,6 +95,52 @@ def polovica_valentinska(prava):
     return "".join(p)
 
 
+TYRKYS = "#46b9c8"
+
+
+def vlnky_pas(x, sirka=10):
+    """Pás s vlnkami hladiny naprieč stuhou."""
+    s = [f'<line x1="{x-sirka/2}" y1="0" x2="{x-sirka/2}" y2="{SIRKA}" stroke="{ZLTA}" stroke-width="0.5"/>',
+         f'<line x1="{x+sirka/2}" y1="0" x2="{x+sirka/2}" y2="{SIRKA}" stroke="{ZLTA}" stroke-width="0.5"/>']
+    for dx in (-2.2, 0, 2.2):
+        d = f"M{x+dx},0"
+        for i in range(10):
+            y = (i + 1) * SIRKA / 10
+            d += f" Q{x+dx+(1.1 if i % 2 == 0 else -1.1)},{y - SIRKA/20} {x+dx},{y}"
+        s.append(f'<path d="{d}" fill="none" stroke="{TYRKYS if dx else KREM}" stroke-width="0.55" stroke-linecap="round"/>')
+    return "".join(s)
+
+
+def kvapka(cx, cy, r, farba=KREM, vnutro=None):
+    """Kvapka špičkou hore (ako tvar medaily)."""
+    d = f"M{cx},{cy-r*1.45} C{cx+r*0.35},{cy-r*0.85} {cx+r},{cy-r*0.35} {cx+r},{cy+r*0.15} A{r},{r} 0 0 1 {cx-r},{cy+r*0.15} C{cx-r},{cy-r*0.35} {cx-r*0.35},{cy-r*0.85} {cx},{cy-r*1.45} Z"
+    s = f'<path d="{d}" fill="{farba}"/>'
+    if vnutro:
+        s += (f'<svg x="{cx-r*0.78}" y="{cy-r*0.62}" width="{r*1.56}" height="{r*1.02}" viewBox="6 6 139 91">'
+              f'<circle cx="118" cy="27" r="19" fill="{ZLTA}"/>'
+              f'<path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="{vnutro}"/></svg>')
+        s += f'<path d="M{cx-r*0.8},{cy+r*0.48} Q{cx-r*0.4},{cy+r*0.38} {cx},{cy+r*0.48} T{cx+r*0.8},{cy+r*0.48}" fill="none" stroke="{TYRKYS}" stroke-width="{r*0.12}" stroke-linecap="round"/>'
+    return s
+
+
+def polovica_plesa(prava):
+    def X(x): return POL - x if prava else x
+    p = [kvapka(X(17), SIRKA/2 + 1.6, 6.6, KREM, MODRA),
+         vlnky_pas(X(38)),
+         logo(X(63), SIRKA/2),
+         vlnky_pas(X(88))]
+    tx = X(172)
+    p.append(text(tx, 11.0, "TATRANSKÉ", 8.4, KREM, "Liberation Sans", sirka_pism=0.9))
+    p.append(text(tx, 21.0, "PLESÁ", 8.4, ZLTA, "Liberation Sans", sirka_pism=2.4))
+    p += [vlnky_pas(X(256))]
+    for i, x in enumerate((276, 286, 296, 306, 316)):
+        p.append(kvapka(X(x), SIRKA/2 + 0.8, 2.4, TYRKYS if i != 2 else ZLTA))
+    p += [vlnky_pas(X(336)),
+          text(X(392), 15.6, "VYSLAPSIMEDAILU.SK", 5.2, KREM, "Liberation Sans", sirka_pism=0.5),
+          vlnky_pas(X(444), 8)]
+    return "".join(p)
+
+
 def stuha(farba, polovica, okraje=None):
     """Celá stuha 900×25 mm v súradniciach mm."""
     defs = f'''<defs>
@@ -167,21 +215,26 @@ def uloz(svg, cesta):
     cairosvg.svg2png(bytestring=svg.encode(), write_to=cesta)
 
 
+STUHY = {
+    "novorocnych-100": ("Stuha – Novoročných 100", "Návrh stuhy · 25 × 900 mm · tmavozelená so zimným vzorom",
+                        "#0b4a30", polovica_novorocnych,
+                        [("Zelená stuha", "#0b4a30"), ("Žltá", ZLTA), ("Krémová", KREM), ("Logo hory", TMZEL)], None, "1 ks na medailu"),
+    "valentinska-dvojica": ("Stuha – Valentínska dvojica", "Návrh stuhy · 25 × 900 mm · bordová so srdiečkami",
+                            "#8a1a2b", polovica_valentinska,
+                            [("Bordová stuha", "#8a1a2b"), ("Krémová", KREM), ("Žltá", ZLTA), ("Logo hory", TMZEL)], KREM,
+                            "2 ks na pár (každá polovica medaily má svoju)"),
+    "tatranske-plesa-2027": ("Stuha – Tatranské plesá", "Návrh stuhy · 25 × 900 mm · plesová modrá s vlnkami hladiny",
+                             MODRA, polovica_plesa,
+                             [("Modrá stuha", MODRA), ("Tyrkysová", TYRKYS), ("Žltá", ZLTA), ("Krémová", KREM)], ZLTA, "1 ks na medailu"),
+}
+
 if __name__ == "__main__":
     out = sys.argv[1]
-    zel = "#0b4a30"
-    svg, s1 = harok("Stuha – Novoročných 100", "Návrh stuhy · 25 × 900 mm · tmavozelená so zimným vzorom",
-                    zel, polovica_novorocnych,
-                    [("Zelená stuha", zel), ("Žltá", ZLTA), ("Krémová", KREM), ("Logo hory", TMZEL)])
-    uloz(svg, f"{out}/stuha-novorocnych-100.png")
-    bord = "#8a1a2b"
-    svg, s2 = harok("Stuha – Valentínska dvojica", "Návrh stuhy · 25 × 900 mm · bordová so srdiečkami",
-                    bord, polovica_valentinska,
-                    [("Bordová stuha", bord), ("Krémová", KREM), ("Žltá", ZLTA), ("Logo hory", TMZEL)],
-                    okraje=KREM, ks="2 ks na pár (každá polovica medaily má svoju)")
-    uloz(svg, f"{out}/stuha-valentinska-dvojica.png")
-    # samotné stuhy bez popisov (súbor pre výrobcu)
-    for meno, s in (("novorocnych-100", s1), ("valentinska-dvojica", s2)):
+    vyber = sys.argv[2:] or list(STUHY)
+    for meno in vyber:
+        nazov, podnazov, farba, pol, farby, okraje, ks = STUHY[meno]
+        svg, s = harok(nazov, podnazov, farba, pol, farby, okraje=okraje, ks=ks)
+        uloz(svg, f"{out}/stuha-{meno}.png")
         cela = f'<svg xmlns="http://www.w3.org/2000/svg" width="9000" height="250" viewBox="0 0 {DLZKA} {SIRKA}">{s}</svg>'
         uloz(cela, f"{out}/stuha-{meno}-tlac.png")
         open(f"{out}/stuha-{meno}-tlac.svg", "w").write(f'<svg xmlns="http://www.w3.org/2000/svg" width="{DLZKA}mm" height="{SIRKA}mm" viewBox="0 0 {DLZKA} {SIRKA}">{s}</svg>')
