@@ -196,6 +196,81 @@ def polovica_hrady(prava):
     return "".join(p)
 
 
+ZEL_OKRAJ = "#0d4a35"
+_scena_id = [0]
+
+
+def vychod_scena(x0, x1, sun_x, seed, hiker=False):
+    """Krajina s východom slnka: obloha, pruhované slnko, vrstvy hôr, smreky."""
+    import random as rnd
+    rnd.seed(seed)
+    _scena_id[0] += 1
+    i = _scena_id[0]
+    top, bot = 2.0, SIRKA - 2.0
+    w = x1 - x0
+    s = [f'<defs><clipPath id="sc{i}"><rect x="{x0}" y="{top}" width="{w}" height="{bot-top}"/></clipPath>'
+         f'<linearGradient id="ob{i}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f26b2a"/>'
+         f'<stop offset="0.55" stop-color="#f9a13a"/><stop offset="1" stop-color="#ffd45e"/></linearGradient></defs>',
+         f'<g clip-path="url(#sc{i})">',
+         f'<rect x="{x0}" y="{top}" width="{w}" height="{bot-top}" fill="url(#ob{i})"/>']
+    # slnko s vodorovnými pruhmi
+    r, sy = 6.2, 11.0
+    s.append(f'<circle cx="{sun_x}" cy="{sy}" r="{r}" fill="{ZLTA}"/>')
+    s.append(f'<path d="M{sun_x-r},{sy} A{r},{r} 0 0 0 {sun_x+r},{sy} Z" fill="#f58a1f"/>')
+    for k, yy in enumerate((sy + 0.6, sy + 2.2, sy + 3.7, sy + 5.0)):
+        s.append(f'<rect x="{sun_x-r}" y="{yy}" width="{2*r}" height="{0.45 + k*0.12}" fill="#f9a13a"/>')
+    # vrstvy hôr
+    for farba, zaklad, amp, krok in (("#3f9e9b", 17.2, 3.2, 9), ("#1f6f86", 19.6, 2.8, 7), ("#16465f", 21.6, 2.2, 6)):
+        pts = [f"{x0},{bot}"]
+        x = x0
+        while x <= x1 + krok:
+            pts.append(f"{x:.1f},{zaklad - rnd.uniform(0.2, 1) * amp:.1f}")
+            x += rnd.uniform(krok * 0.6, krok * 1.3)
+        pts.append(f"{x1+krok},{bot}")
+        s.append(f'<polygon points="{" ".join(pts)}" fill="{farba}"/>')
+        s.append(f'<polyline points="{" ".join(pts[1:-1])}" fill="none" stroke="#e8f3ee" stroke-width="0.18" opacity="0.6"/>')
+    if hiker:  # štít s turistom pred slnkom
+        s.append(f'<polygon points="{sun_x-11},{bot} {sun_x-0.7},{sy+1.6} {sun_x+0.8},{sy+2.0} {sun_x+11},{bot}" fill="#5b6268"/>')
+        s.append(f'<polygon points="{sun_x-0.7},{sy+1.6} {sun_x+0.8},{sy+2.0} {sun_x+4},{bot} {sun_x+0.8},{bot}" fill="#8a9298"/>')
+        hx, hy = sun_x + 0.1, sy + 1.7
+        s.append(f'<circle cx="{hx}" cy="{hy-3.3}" r="0.55" fill="#1d2a24"/>'
+                 f'<rect x="{hx-0.5}" y="{hy-2.7}" width="1" height="1.7" fill="#1d2a24"/>'
+                 f'<rect x="{hx-1.1}" y="{hy-2.6}" width="0.7" height="1.3" fill="#1d2a24"/>'
+                 f'<line x1="{hx-0.3}" y1="{hy-1}" x2="{hx-0.6}" y2="{hy}" stroke="#1d2a24" stroke-width="0.45"/>'
+                 f'<line x1="{hx+0.3}" y1="{hy-1}" x2="{hx+0.6}" y2="{hy}" stroke="#1d2a24" stroke-width="0.45"/>'
+                 f'<line x1="{hx+0.9}" y1="{hy-2.2}" x2="{hx+1.1}" y2="{hy}" stroke="#1d2a24" stroke-width="0.25"/>')
+    # smreky
+    x = x0 + rnd.uniform(0, 4)
+    while x < x1:
+        v = rnd.uniform(4, 7.5)
+        if not hiker or abs(x - sun_x) > 10:
+            for k in range(3):
+                ww = v * (0.16 + k * 0.08)
+                yt = bot - v + k * v * 0.24
+                s.append(f'<polygon points="{x:.1f},{yt:.1f} {x+ww:.1f},{yt+v*0.36:.1f} {x-ww:.1f},{yt+v*0.36:.1f}" fill="{ZEL_OKRAJ}"/>')
+        x += rnd.uniform(2.2, 5)
+    s.append(f'<rect x="{x0}" y="{bot-0.9}" width="{w}" height="0.9" fill="{ZEL_OKRAJ}"/>')
+    s.append("</g>")
+    return "".join(s)
+
+
+def polovica_vychod(prava):
+    def X(x): return POL - x if prava else x
+    def usek(a, b): return (min(X(a), X(b)), max(X(a), X(b)))
+    a1, b1 = usek(0, 112)
+    a2, b2 = usek(292, 392)
+    p = [f'<rect x="0" y="0" width="{POL}" height="2" fill="{ZEL_OKRAJ}"/>',
+         f'<rect x="0" y="{SIRKA-2}" width="{POL}" height="2" fill="{ZEL_OKRAJ}"/>',
+         vychod_scena(a1, b1, X(58), 11 + prava, hiker=True),
+         f'<svg x="{X(134)-12}" y="{SIRKA/2-8}" width="24" height="16" viewBox="6 6 139 91">'
+         f'<circle cx="118" cy="27" r="19" fill="{ZLTA}"/><path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="{TMZEL}"/></svg>',
+         text(X(218), 12.0, "VÝCHOD SLNKA", 7.2, ZEL_OKRAJ, "Liberation Sans", sirka_pism=0.6),
+         text(X(218), 20.6, "NA VRCHOLE", 7.2, ZEL_OKRAJ, "Liberation Sans", sirka_pism=1.2),
+         vychod_scena(a2, b2, X(342), 21 + prava),
+         text(X(422), 15.2, "VYSLAPSIMEDAILU.SK", 4.2, ZEL_OKRAJ, "Liberation Sans", sirka_pism=0.4)]
+    return "".join(p)
+
+
 def stuha(farba, polovica, okraje=None):
     """Celá stuha 900×25 mm v súradniciach mm."""
     defs = f'''<defs>
@@ -281,6 +356,9 @@ STUHY = {
     "hradna-vyzva-2027": ("Stuha – Hradná výzva", "Návrh stuhy · 25 × 900 mm · bordová so zlatými linkami a hradmi",
                           BORDO, polovica_hrady,
                           [("Bordová stuha", BORDO), ("Zlatá", ZLATA), ("Krémová", KREM), ("Zelená kopec", ZELEN_H)], ZLATA, "1 ks na medailu"),
+    "vychod-slnka-2027": ("Stuha – Východ slnka na vrchole", "Návrh stuhy · 25 × 900 mm · krémová so zelenými okrajmi a východom slnka",
+                          KREM, polovica_vychod,
+                          [("Krémová stuha", KREM), ("Zelené okraje", ZEL_OKRAJ), ("Oranžová", "#f26b2a"), ("Hory", "#1f6f86")], None, "1 ks na medailu"),
     "tatranske-plesa-2027": ("Stuha – Tatranské plesá", "Návrh stuhy · 25 × 900 mm · plesová modrá s vlnkami hladiny",
                              MODRA, polovica_plesa,
                              [("Modrá stuha", MODRA), ("Tyrkysová", TYRKYS), ("Žltá", ZLTA), ("Krémová", KREM)], ZLTA, "1 ks na medailu"),

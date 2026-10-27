@@ -15,7 +15,7 @@ Každá výzva má svoj priečinok:
 | Hradná výzva 2027 | ✅ | ✅ finálna |
 | Tatranské plesá 2027 | ✅ (dočasná, nová v návrhu) | ✅ finálna |
 | Cesta SNP 2027 | ✅ | – |
-| Východ slnka na vrchole 2027 | ✅ | – |
+| Východ slnka na vrchole 2027 | ✅ | ✅ finálna (retro pruhy) |
 | 12 vrcholov za rok 2027 | ✅ | – |
 | **Tatry 2027** (prémiová, 5 medailí) | | |
 | ↳ Rysy | ✅ finálna | ✅ finálna |
