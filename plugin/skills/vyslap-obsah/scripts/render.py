@@ -68,12 +68,9 @@ def img_src(p: str, base: Path) -> str:
     return _b64(path, mime)
 
 
-LOGO = (f'<svg class="logo" viewBox="0 0 116 76" xmlns="http://www.w3.org/2000/svg">'
-        f'<circle cx="95" cy="16" r="16" fill="{ZLTA}"/>'
-        f'<path d="M0 74 L46 20 L78 58 L64 74 Z" fill="{ZELENA}"/>'
-        f'<path d="M38 74 L72 36 L114 74 Z" fill="{ZELENA}"/>'
-        f'<path d="M54 74 L72 55 L90 74" fill="none" stroke="{KREM}" stroke-width="3.2"/>'
-        f'</svg>')
+# Originálne logo značky: assets/logo.svg (zdroj pravdy; nekresliť ručne)
+LOGO = re.sub(r"<title.*?</title>\s*|\s*role=\"img\"\s*aria-labelledby=\"title\"", "",
+              (ROOT / "assets" / "logo.svg").read_text(encoding="utf-8")).replace("<svg ", '<svg class="logo" ', 1).strip()
 
 # Malé kreslené ikony vo farbách značky (viewBox 0 0 120 120). Používať striedmo: max 1 na slide, 1–2 na carousel.
 Z, Y, K = ZELENA, ZLTA, KREM
@@ -124,7 +121,7 @@ b, strong {{ font-weight: 700; }}
 
 /* hlavička a päta – rovnaké na každom slide */
 .hlavicka {{ flex: none; height: 174px; display: flex; align-items: center; gap: 32px; padding: 0 72px 6px 76px; }}
-.hlavicka .logo {{ width: 116px; height: 76px; flex: none; }}
+.hlavicka .logo {{ width: 120px; height: 83px; flex: none; }}
 .hlavicka span {{ font-weight: 700; font-size: 36px; letter-spacing: .3px; padding-top: 14px; }}
 .pata {{ flex: none; height: 156px; display: flex; justify-content: space-between; align-items: center; padding: 0 106px 0 72px; font-size: 28px; }}
 .pata .str {{ letter-spacing: .5px; }}
@@ -196,7 +193,7 @@ h2.podnadpis {{ font-weight: 700; font-size: 80px; line-height: 1.2; color: {KRE
   display: flex; align-items: center; padding-left: 108px; }}
 .t-fotka .pas span {{ font-weight: 700; font-size: 170px; letter-spacing: 3px; text-transform: uppercase; transform: rotate(3deg); margin-top: 26px; }}
 .t-fotka .spodna {{ position: absolute; left: 76px; bottom: 66px; display: flex; align-items: center; gap: 44px; z-index: 3; }}
-.t-fotka .spodna .logo {{ width: 96px; height: 64px; }}
+.t-fotka .spodna .logo {{ width: 96px; height: 66px; }}
 .t-fotka .spodna span {{ font-weight: 700; font-size: 36px; padding-top: 10px; }}
 
 /* story – viac vzduchu hore/dole kvôli rozhraniu Instagramu */

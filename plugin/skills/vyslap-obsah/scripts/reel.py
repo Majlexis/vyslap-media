@@ -36,7 +36,7 @@ html,body {{ width:1080px; height:1920px; overflow:hidden; font-family:'VSM',Ari
 svg.cesta {{ position:absolute; left:90px; top:660px; width:900px; height:820px; overflow:visible; }}
 .pod {{ position:absolute; top:1540px; left:0; right:0; text-align:center; font-weight:700; font-size:70px; color:{Y}; }}
 .web {{ position:absolute; bottom:200px; left:0; right:0; text-align:center; font-weight:700; font-size:40px; }}
-#krem .logo {{ width:300px; height:196px; }}
+#krem .logo {{ width:300px; height:208px; }}
 #krem .r {{ font-weight:700; font-size:80px; line-height:1.25; margin-top:10px; }}
 #krem .r1 {{ margin-top:110px; }}
 #krem .web {{ color:{Z}; }}
