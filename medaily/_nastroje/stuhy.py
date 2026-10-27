@@ -141,6 +141,61 @@ def polovica_plesa(prava):
     return "".join(p)
 
 
+BORDO, ZLATA, ZELEN_H = "#7a1628", "#d9b45a", "#2f6a3c"
+
+
+def hrad(cx, zem, v, farba=KREM, vlajka=ZLTA):
+    """Silueta hradu: stredná veža + dve bočné veže a hradby, v = výška v mm."""
+    w = v * 1.5
+    t = []
+    def veza(x, sirka, vyska, strecha=False):
+        y = zem - vyska
+        d = f"M{x-sirka/2},{zem} L{x-sirka/2},{y}"
+        z = sirka / 5
+        for k in range(5):
+            d += f" l{z/2},0 l0,{-z*0.6 if k % 2 == 0 else z*0.6} l{z/2},0"
+        d += f" L{x+sirka/2},{zem} Z"
+        r = f'<path d="{d}" fill="{farba}"/>'
+        if strecha:
+            r += f'<polygon points="{x-sirka*0.6},{y} {x+sirka*0.6},{y} {x},{y-sirka*1.1}" fill="{BORDO}" stroke="{farba}" stroke-width="{v*0.03}"/>'
+            r += f'<line x1="{x}" y1="{y-sirka*1.1}" x2="{x}" y2="{y-sirka*1.6}" stroke="{farba}" stroke-width="{v*0.04}"/>'
+            r += f'<polygon points="{x},{y-sirka*1.6} {x+sirka*0.6},{y-sirka*1.45} {x},{y-sirka*1.3}" fill="{vlajka}"/>'
+        return r
+    t.append(f'<rect x="{cx-w/2}" y="{zem-v*0.45}" width="{w}" height="{v*0.45}" fill="{farba}"/>')
+    t.append(veza(cx - w*0.42, v*0.28, v*0.62))
+    t.append(veza(cx + w*0.42, v*0.28, v*0.62))
+    t.append(veza(cx, v*0.36, v*0.82, strecha=True))
+    t.append(f'<path d="M{cx-v*0.08},{zem} l0,{-v*0.18} a{v*0.08},{v*0.08} 0 0 1 {v*0.16},0 l0,{v*0.18} Z" fill="{BORDO}"/>')
+    return "".join(t)
+
+
+def ornament(cx, cy, r, farba=ZLATA):
+    return (f'<path d="M{cx},{cy-r} L{cx+r},{cy} L{cx},{cy+r} L{cx-r},{cy} Z" fill="none" stroke="{farba}" stroke-width="0.5"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r*0.3}" fill="{farba}"/>')
+
+
+def polovica_hrady(prava):
+    def X(x): return POL - x if prava else x
+    hx = X(24)
+    p = [  # vinetka: kopec, cesta, hrad a slnko
+        f'<path d="M{hx-17},{SIRKA-2.2} Q{hx-6},{SIRKA-12} {hx+3},{SIRKA-9} Q{hx+11},{SIRKA-7} {hx+17},{SIRKA-2.2} Z" fill="{ZELEN_H}"/>',
+        f'<path d="M{hx-2},{SIRKA-2.2} Q{hx+4},{SIRKA-5} {hx-1},{SIRKA-7.5}" fill="none" stroke="{ZLATA}" stroke-width="0.9" stroke-linecap="round"/>',
+        f'<circle cx="{hx+9}" cy="7.4" r="3.2" fill="{ZLTA}"/>',
+        hrad(hx - 1, SIRKA - 9.6, 9),
+        logo(X(60), SIRKA / 2, w=25, h=17),
+        ornament(X(86), SIRKA / 2, 2.6),
+        text(X(160), 11.4, "HRADNÁ", 8.4, KREM, "DejaVu Serif", sirka_pism=1.0),
+        text(X(160), 21.2, "VÝZVA", 8.4, ZLATA, "DejaVu Serif", sirka_pism=2.2),
+        ornament(X(228), SIRKA / 2, 2.6),
+        text(X(260), 15.4, "8 HRADOV", 5.6, ZLTA, "DejaVu Serif", sirka_pism=0.6),
+    ]
+    for k in range(8):
+        p.append(hrad(X(300 + k * 10), 17.2, 5.8, KREM if k % 2 == 0 else ZLATA))
+    p.append(f'<rect x="{min(X(295), X(375))}" y="17.6" width="80" height="0.5" fill="{ZLATA}"/>')
+    p.append(text(X(415), 15.2, "VYSLAPSIMEDAILU.SK", 3.9, ZLATA, "DejaVu Serif", sirka_pism=0.2))
+    return "".join(p)
+
+
 def stuha(farba, polovica, okraje=None):
     """Celá stuha 900×25 mm v súradniciach mm."""
     defs = f'''<defs>
@@ -223,6 +278,9 @@ STUHY = {
                             "#8a1a2b", polovica_valentinska,
                             [("Bordová stuha", "#8a1a2b"), ("Krémová", KREM), ("Žltá", ZLTA), ("Logo hory", TMZEL)], KREM,
                             "2 ks na pár (každá polovica medaily má svoju)"),
+    "hradna-vyzva-2027": ("Stuha – Hradná výzva", "Návrh stuhy · 25 × 900 mm · bordová so zlatými linkami a hradmi",
+                          BORDO, polovica_hrady,
+                          [("Bordová stuha", BORDO), ("Zlatá", ZLATA), ("Krémová", KREM), ("Zelená kopec", ZELEN_H)], ZLATA, "1 ks na medailu"),
     "tatranske-plesa-2027": ("Stuha – Tatranské plesá", "Návrh stuhy · 25 × 900 mm · plesová modrá s vlnkami hladiny",
                              MODRA, polovica_plesa,
                              [("Modrá stuha", MODRA), ("Tyrkysová", TYRKYS), ("Žltá", ZLTA), ("Krémová", KREM)], ZLTA, "1 ks na medailu"),
