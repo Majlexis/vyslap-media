@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900mm" height="25mm" viewBox="0 0 900 25"><defs>
+<pattern id="tkanina" width="0.6" height="0.6" patternUnits="userSpaceOnUse">
+  <rect width="0.6" height="0.3" fill="#000" opacity="0.05"/></pattern>
+<pattern id="tkanina2" width="0.8" height="0.8" patternUnits="userSpaceOnUse">
+  <rect width="0.35" height="0.8" fill="#fff" opacity="0.025"/></pattern>
+<linearGradient id="tien" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#000" stop-opacity="0.18"/><stop offset="0.12" stop-color="#000" stop-opacity="0"/>
+  <stop offset="0.5" stop-color="#fff" stop-opacity="0.04"/>
+  <stop offset="0.88" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity="0.2"/>
+</linearGradient></defs><rect width="900" height="25" fill="#f7f5ee"/><g><rect width="450.0" height="25" fill="#f7f5ee"/><rect y="7.6" width="450.0" height="9.8" fill="#d42a2a"/><rect y="0" width="450.0" height="1.6" fill="#0b4a2c"/><rect y="23.4" width="450.0" height="1.6" fill="#0b4a2c"/><rect x="15" y="2.6" width="30" height="19.8" fill="#f7f5ee"/><g transform="translate(30,12.5)">
+  <rect x="-13.5" y="-8.5" width="27" height="17" rx="0.6" fill="#f6f3e9"/>
+  <svg x="-9.719999999999999" y="-5.779999999999999" width="19.439999999999998" height="11.559999999999999" viewBox="6 6 139 91" preserveAspectRatio="xMidYMid meet">
+    <circle cx="118" cy="27" r="19" fill="#ffca1b"/>
+    <path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="#063f2d"/>
+  </svg>
+</g><text x="140" y="15.9" font-family="Liberation Sans" font-weight="bold" font-size="8.4" fill="#f7f5ee" text-anchor="middle" letter-spacing="1.6">CESTA SNP</text><text x="222" y="15.9" font-family="Liberation Sans" font-weight="bold" font-size="8.4" fill="#ffca1b" text-anchor="middle" letter-spacing="1.0">770 KM</text><text x="310" y="15.6" font-family="Liberation Sans" font-weight="bold" font-size="5.0" fill="#f7f5ee" text-anchor="middle" letter-spacing="0.5">DEVÍN – DUKLA · 2027</text><text x="408" y="15.4" font-family="Liberation Sans" font-weight="bold" font-size="4.4" fill="#f7f5ee" text-anchor="middle" letter-spacing="0.4">VYSLAPSIMEDAILU.SK</text></g><g transform="translate(450.0,0)"><rect width="450.0" height="25" fill="#f7f5ee"/><rect y="7.6" width="450.0" height="9.8" fill="#d42a2a"/><rect y="0" width="450.0" height="1.6" fill="#0b4a2c"/><rect y="23.4" width="450.0" height="1.6" fill="#0b4a2c"/><rect x="405.0" y="2.6" width="30" height="19.8" fill="#f7f5ee"/><g transform="translate(420.0,12.5)">
+  <rect x="-13.5" y="-8.5" width="27" height="17" rx="0.6" fill="#f6f3e9"/>
+  <svg x="-9.719999999999999" y="-5.779999999999999" width="19.439999999999998" height="11.559999999999999" viewBox="6 6 139 91" preserveAspectRatio="xMidYMid meet">
+    <circle cx="118" cy="27" r="19" fill="#ffca1b"/>
+    <path d="M9 93 63 29 83 53 51 93Z M56 93 83 61 108 93Z M85 58 99 42 142 94 108 93Z" fill="#063f2d"/>
+  </svg>
+</g><text x="310.0" y="15.9" font-family="Liberation Sans" font-weight="bold" font-size="8.4" fill="#f7f5ee" text-anchor="middle" letter-spacing="1.6">CESTA SNP</text><text x="228.0" y="15.9" font-family="Liberation Sans" font-weight="bold" font-size="8.4" fill="#ffca1b" text-anchor="middle" letter-spacing="1.0">770 KM</text><text x="140.0" y="15.6" font-family="Liberation Sans" font-weight="bold" font-size="5.0" fill="#f7f5ee" text-anchor="middle" letter-spacing="0.5">DEVÍN – DUKLA · 2027</text><text x="42.0" y="15.4" font-family="Liberation Sans" font-weight="bold" font-size="4.4" fill="#f7f5ee" text-anchor="middle" letter-spacing="0.4">VYSLAPSIMEDAILU.SK</text></g><rect width="900" height="25" fill="url(#tkanina)"/><rect width="900" height="25" fill="url(#tkanina2)"/><rect width="900" height="25" fill="url(#tien)"/></svg>
