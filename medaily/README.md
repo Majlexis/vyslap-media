@@ -16,7 +16,7 @@ Každá výzva má svoj priečinok:
 | Tatranské plesá 2027 | ✅ (dočasná, nová v návrhu) | ✅ finálna |
 | Cesta SNP 2027 | ✅ | ✅ finálna (turistická značka, 770 km – overiť) |
 | Východ slnka na vrchole 2027 | ✅ | ✅ finálna (retro pruhy) |
-| 12 vrcholov za rok 2027 | ✅ | – |
+| 12 vrcholov za rok 2027 | ✅ | ✅ finálna (Veľká 12) |
 | **Tatry 2027** (prémiová, 5 medailí) | | |
 | ↳ Rysy | ✅ finálna | ✅ finálna |
 | ↳ Kriváň | ✅ finálna | ✅ finálna |
