@@ -112,7 +112,9 @@ YouTube Shorts zatiaľ nerobíme.
 - Medaila sa posiela kupujúcemu (do jeho Z-BOXu), aby ju mohol odovzdať
 
 **Organizátor**
-- Živnosť je založená, platná od 14. 11. 2026 – je organizátorom súťaží (žrebovaní) a platiteľom reklamy. Obchodné meno a IČO: [DOPLNIŤ]
+- Prevádzkovateľ: Mgr. Dagmar Šalapová, IČO 53157397, miesto podnikania Lesné 111, 071 01 Michalovce (živnostenský register OÚ Michalovce, č. 840-34952)
+- Živnosť platná od 14. 11. 2026 – je predávajúcou, organizátorom súťaží (žrebovaní) a platiteľom reklamy; na ňu idú obchodné podmienky, faktúry, platobná brána, zmluvy a GDPR
+- Web, sociálne siete a obsah spravuje Alex
 
 **Všeobecne**
 - Poštovné: od 3,50 € SK, 4,20 € CZ
