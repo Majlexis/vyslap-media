@@ -3,6 +3,24 @@
 > Kto dostal ponuku a v akom je to stave. Správy sa píšu ako koncepty v Gmaile – **nič sa neodosiela bez Alexovho „ok“**.
 > Stavy: `kandidát` → `koncept pripravený` → `odoslané` → `odpovedal` → `dohodnuté` / `odmietol` / `bez odpovede`
 
+## Už oslovení (e-mail 3. 10. 2026, predmet „Možná spolupráca – partnerská zľava pre turistickú výzvu 2027“)
+
+Žiadosť: partnerský kód 5–15 % pre registrovaných účastníkov. Ponuka: uvedenie na webe s preklikom a na sieťach.
+
+| Partner | Kontakt | Stav | Čo odpovedali | Ďalší krok |
+|---|---|---|---|---|
+| **4camping** | Adam Lokša, brand manager · adam.loksa@4camping.cz | **odpovedal – ÁNO** | 5. 10.: vedia dať 5–7 %, začali by 5 % a pri dobrom výsledku navýšia; kód nesmie byť verejný, menia ho každé 3 mesiace; chcel náhľad webu. Alex 5. 10. poslal odkaz a návrh kartičky s kódom a logom. | **Odvtedy ticho – pripomenúť sa a dohodnúť kód + logo** |
+| Sportrysy (Poprad) | Ing. Natália Pačnárová, marketing@sportrysy.sk | odmietol | 8. 10.: teraz nie, menia vernostný systém; do budúcna sú otvorení | znova osloviť, keď budú mať systém ustálený (napr. jar 2027) |
+| Intersport SK | eshop@intersport.sk (Gabriela Martonová) | odmietol | 5. 10.: centrála robí len celoslovenské akcie, na lokálne odporúčajú osloviť konkrétnu predajňu | prípadne osloviť konkrétnu predajňu |
+| MTBIKER | marketing@mtbiker.sk | bez odpovede | – | pripomenúť sa |
+| Trekland | eshop@trekland.sk | bez odpovede | – | pripomenúť sa |
+| Protrek | obchod@protrek.sk | bez odpovede | – | pripomenúť sa |
+| Kompava | marketing@kompava.sk | bez odpovede | – | pripomenúť sa |
+| Galfy | eshop@galfy.sk | bez odpovede | – | pripomenúť sa |
+| Adam Sport | adamsport@adamsport.eu | bez odpovede | – | pripomenúť sa |
+
+⚠️ V tom e-maile stálo „výzvy vo Vysokých Tatrách“, „web koncom novembra“ a „výzvy od 1. 1. 2027“. Dnes platí: výzvy kdekoľvek, predaj od 15. 11. 2026. Pri pripomenutí to opraviť.
+
 ## Balíček k medaile – zľavy a drobnosti od obchodov
 
 **Nápad:** do Z-BOX balíčka s medailou pribaliť kartičku so zľavovými kódmi (príp. malú plochú vzorku). Obchod dostane priamy kontakt s ľuďmi, ktorí sa práve začali hýbať. My za to ponúkneme logo na kartičke a zmienku na IG/FB a webe.
@@ -35,7 +53,7 @@
 |---|---|---|---|---|---|---|---|
 | R1 | Decathlon | športový reťazec | FR, predajne na SK | kód na sortiment, prípadne vlastnú značku Quechua/Kalenji | [dohľadať marketing SK] | kandidát | |
 | R2 | Sportisimo | športový reťazec | CZ, veľa predajní na SK | kód, affiliate | [dohľadať] | kandidát | je v affiliate sieťach |
-| R3 | Intersport | športový reťazec | predajne na SK | kód | [dohľadať] | kandidát | |
+| R3 | Intersport | športový reťazec | predajne na SK | kód | eshop@intersport.sk | odmietol 5. 10. | viď „Už oslovení“ |
 | R4 | Hervis | športový reťazec | AT, predajne na SK | kód | [dohľadať] | kandidát | |
 | R5 | Gigasport | športový reťazec | AT, predajne na SK | kód | [dohľadať] | kandidát | |
 | R6 | Top4Sport / Top4Running | šport, bežecká obuv | CZ/SK, e-shop | kód na bežeckú obuv | [dohľadať] | kandidát | |
@@ -50,7 +68,7 @@
 | R15 | Kilpi | outdoor oblečenie | CZ/SK | kód | [dohľadať] | kandidát | |
 | R16 | Zajo | merino a outdoor | CZ, predaj na SK | kód na merino | [dohľadať] | kandidát | |
 | R17 | Northfinder | outdoor oblečenie | SK | kód | [dohľadať] | kandidát | = č. 13 vyššie |
-| R18 | MTBIKER.shop | outdoor a cyklo e-shop | SK | kód | [dohľadať] | kandidát | |
+| R18 | MTBIKER.shop | outdoor a cyklo e-shop | SK | kód | marketing@mtbiker.sk | oslovený 3. 10., bez odpovede | viď „Už oslovení“ |
 | R19 | GymBeam | výživa, tyčinky | SK (Košice) | kód, prípadne vzorky | [dohľadať] | kandidát | silný influencer/affiliate program |
 | R20 | Nutrend | športová výživa | CZ | kód, prípadne vzorky | [dohľadať] | kandidát | |
 
