@@ -26,6 +26,34 @@
 | 13 | Northfinder a.s. | outdoor oblečenie (veľká SK značka) | SK | silná značka medzi turistami | [dohľadať marketing] | northfinder.com | kandidát | | veľká firma – skôr až s prvými číslami |
 | 14 | Max Sport | proteínové tyčinky | SK (vlastník Bauli) | veľký výrobca, vzorky | [dohľadať marketing] | maxsport.sk | kandidát | | veľká firma – nižšia šanca |
 
+## Veľké reťazce a značky (ako Decathlon) – zľavové kódy
+
+**Realita:** veľké firmy zľavy menším partnerom dávajú najčastejšie cez affiliate siete (Dognet, eHub, affi.io). Vtedy dostaneme kód a províziu, nie darček. Priamy kód na kartičku je reálnejší až s prvými číslami (koľko balíčkov sme rozoslali). Kontakty treba dohľadať: sekcia „Spolupráca/Partneri/Marketing“ na webe, prípadne marketing na LinkedIne.
+**Postup:** 1. vlna = slovenské a menšie značky (tabuľka vyššie), 2. vlna = reťazce nižšie, ideálne s číslami po predaji.
+
+| # | Partner | Typ | Pôvod / pobočky na SK | Čo by mohli dať | Kontakt | Stav | Poznámka |
+|---|---|---|---|---|---|---|---|
+| R1 | Decathlon | športový reťazec | FR, predajne na SK | kód na sortiment, prípadne vlastnú značku Quechua/Kalenji | [dohľadať marketing SK] | kandidát | |
+| R2 | Sportisimo | športový reťazec | CZ, veľa predajní na SK | kód, affiliate | [dohľadať] | kandidát | je v affiliate sieťach |
+| R3 | Intersport | športový reťazec | predajne na SK | kód | [dohľadať] | kandidát | |
+| R4 | Hervis | športový reťazec | AT, predajne na SK | kód | [dohľadať] | kandidát | |
+| R5 | Gigasport | športový reťazec | AT, predajne na SK | kód | [dohľadať] | kandidát | |
+| R6 | Top4Sport / Top4Running | šport, bežecká obuv | CZ/SK, e-shop | kód na bežeckú obuv | [dohľadať] | kandidát | |
+| R7 | A3 Sport | šport, obuv | CZ/SK | kód | [dohľadať] | kandidát | |
+| R8 | Martes Sport | športový reťazec | PL, predajne na SK | kód | [dohľadať] | kandidát | |
+| R9 | 4F | športové oblečenie | PL, predajne na SK | kód | [dohľadať] | kandidát | |
+| R10 | Hudy | outdoor reťazec | CZ, predajne na SK | kód na outdoor vybavenie | [dohľadať] | kandidát | |
+| R11 | Rock Point | outdoor reťazec | CZ, predajne na SK | kód | [dohľadať] | kandidát | patrí k skupine Hannah |
+| R12 | Alpine Pro | outdoor oblečenie | CZ, predajne na SK | kód | [dohľadať] | kandidát | |
+| R13 | Hannah | outdoor oblečenie | CZ | kód | [dohľadať] | kandidát | |
+| R14 | Husky | outdoor vybavenie | CZ, huskysk.sk | kód | [dohľadať] | kandidát | |
+| R15 | Kilpi | outdoor oblečenie | CZ/SK | kód | [dohľadať] | kandidát | |
+| R16 | Zajo | merino a outdoor | CZ, predaj na SK | kód na merino | [dohľadať] | kandidát | |
+| R17 | Northfinder | outdoor oblečenie | SK | kód | [dohľadať] | kandidát | = č. 13 vyššie |
+| R18 | MTBIKER.shop | outdoor a cyklo e-shop | SK | kód | [dohľadať] | kandidát | |
+| R19 | GymBeam | výživa, tyčinky | SK (Košice) | kód, prípadne vzorky | [dohľadať] | kandidát | silný influencer/affiliate program |
+| R20 | Nutrend | športová výživa | CZ | kód, prípadne vzorky | [dohľadať] | kandidát | |
+
 ### Zvážené a odložené
 - **Fusakle** – zábavné ponožky, sedeli by na darček, ale firma je podľa médií vo finančných problémoch. Zatiaľ ich neoslovujeme.
 
