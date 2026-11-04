@@ -119,6 +119,7 @@ YouTube Shorts zatiaľ nerobíme.
 **Všeobecne**
 - Poštovné: od 3,50 € SK, 4,20 € CZ
 - Ďalšie výzvy: [DOPLNIŤ, keď budú]
+- Aktivity sa zapisujú **ručne v účte** na webe. Strava: žiadosť o vyšší limit (nad 10 športovcov) Strava 3. 11. 2026 zamietla, pri spustení sa ráta len s ručnými záznamami. Novú žiadosť podáme po spustení, keď bude pripojených ~10 reálnych používateľov.
 
 ## 10. Čo nikdy nerobíme
 - Nespomíname Stravu, Garmin ani automatické overenie, kým to nie je schválené a spustené.
