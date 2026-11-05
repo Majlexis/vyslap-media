@@ -56,7 +56,7 @@
 - **Písmo:** tučné bezpätkové (Arial / Liberation Sans), bez ručného písma
 - **Štýl:** čistý a výrazný – hlavička s logom, tmavozelený panel, plné žlté bloky, päta s webom a číslovaním „01 / 05“. Vzory: `assets/vzory/`
 - **Fotky:** skutoční ľudia vonku, medaily, slovenská príroda – v kruhu so žltým lemom. Nie stockové „fitness modelky“.
-- **Logo:** dva tmavozelené kopce + žlté slnko (v generátore ako SVG)
+- **Logo:** vždy **presne to isté** ako `medaily/_podklady/logo.png` – tri tmavozelené kopce oddelené krémovými medzerami + žlté slnko vpravo hore. Nikdy ho neprekresľovať ani neupravovať; v generátore je ako presná kópia (SVG `LOGO` v `scripts/render.py`), platí pre posty, stories aj reels.
 - **Reels:** zelené pozadie, krátky nadpis, jednoduchá žltá animácia, krémový záver s logom
 
 ## 7. Obsahové piliere

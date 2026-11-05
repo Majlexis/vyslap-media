@@ -68,11 +68,11 @@ def img_src(p: str, base: Path) -> str:
     return _b64(path, mime)
 
 
-LOGO = (f'<svg class="logo" viewBox="0 0 116 76" xmlns="http://www.w3.org/2000/svg">'
-        f'<circle cx="95" cy="16" r="16" fill="{ZLTA}"/>'
-        f'<path d="M0 74 L46 20 L78 58 L64 74 Z" fill="{ZELENA}"/>'
-        f'<path d="M38 74 L72 36 L114 74 Z" fill="{ZELENA}"/>'
-        f'<path d="M54 74 L72 55 L90 74" fill="none" stroke="{KREM}" stroke-width="3.2"/>'
+LOGO = (f'<svg class="logo" viewBox="50 40 810 530" xmlns="http://www.w3.org/2000/svg">'  # presne podľa medaily/_podklady/logo.png
+        f'<circle cx="708" cy="162" r="114" fill="{ZLTA}"/>'
+        f'<path d="M55 557 L378 175 L497 318 L305 557 Z" fill="{ZELENA}"/>'
+        f'<path d="M337 557 L497 367 L645 557 Z" fill="{ZELENA}"/>'
+        f'<path d="M510 348 L594 252 L851 563 L645 557 Z" fill="{ZELENA}"/>'
         f'</svg>')
 
 # Malé kreslené ikony vo farbách značky (viewBox 0 0 120 120). Používať striedmo: max 1 na slide, 1–2 na carousel.
