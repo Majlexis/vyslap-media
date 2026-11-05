@@ -1,0 +1,22 @@
+{
+  "format": "carousel",
+  "slides": [
+    {"typ": "uvod", "riadky": ["O týždeň", "otvárame", "predaj."], "zvyraznit": 2,
+     "podnadpis": "Tri výzvy na rok 2027.\nVyber si tú svoju.", "velke": "15. 11.", "velke_popis": "ŠTART PREDAJA", "dalej": "Posuň ďalej →"},
+    {"typ": "zoznam", "nadpis": "Tri výzvy od 15. 11.",
+     "polozky": [
+       {"nazov": "NOVOROČNÝCH 100", "text": "100 km chôdzou, behom alebo turistikou za január."},
+       {"nazov": "VALENTÍNSKA DVOJICA", "text": "14 km spolu v jeden deň, od 7. do 21. 2."},
+       {"nazov": "VÝCHOD SLNKA NA VRCHOLE", "text": "Jedno ráno, jeden vrchol, kedykoľvek do 30. 9."}
+     ]},
+    {"typ": "kroky", "stitok": "02 / AKO TO FUNGUJE", "nadpis": "Tri kroky.", "podnadpis": "Tvoje tempo.",
+     "kroky": [
+       {"nazov": "Vyber si výzvu.", "text": "Aj ako darček pre niekoho blízkeho."},
+       {"nazov": "Zapíš aktivity.", "text": "V účte na webe, vlastným tempom."},
+       {"nazov": "Príde medaila.", "text": "Do Z-BOXu, spravidla do 4 týždňov od splnenia."}
+     ]},
+    {"typ": "blok", "stitok": "03 / CENA", "nadpis": "Koľko to stojí?", "blok": "24,99 €",
+     "text": "Novoročných 100 a Východ slnka na vrchole.", "maly": "Valentínska dvojica 49,99 € za oboch. Poštovné od 3,50 €.", "ikona": "medaila"},
+    {"typ": "koniec", "nadpis": "Ktorú si vyberieš?", "uvod": "Predaj otvárame", "zvyraznenie": "15. novembra 2026", "text": "Kovová medaila za každú splnenú výzvu."}
+  ]
+}

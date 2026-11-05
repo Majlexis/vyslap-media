@@ -1,0 +1,64 @@
+{
+ "format": "carousel",
+ "slides": [
+  {
+   "typ": "uvod",
+   "riadky": [
+    "Vstaň potme.",
+    "Vyšľap hore.",
+    "Počkaj na slnko."
+   ],
+   "zvyraznit": 2,
+   "podnadpis": "Nová výzva:\nVýchod slnka na vrchole.",
+   "velke": "1×",
+   "velke_popis": "STAČÍ RAZ ZA ROK",
+   "dalej": "Posuň ďalej →",
+   "ikona": "hory"
+  },
+  {
+   "typ": "kroky",
+   "stitok": "01 / PRAVIDLÁ",
+   "nadpis": "Jednoduché.",
+   "podnadpis": "Kedy a kde chceš.",
+   "kroky": [
+    {
+     "nazov": "Vyber si vrchol.",
+     "text": "Akýkoľvek vrchol alebo kopec. Výška nerozhoduje."
+    },
+    {
+     "nazov": "Príď pešo pred úsvitom.",
+     "text": "Kedykoľvek od 1. 1. do 30. 9. 2027."
+    },
+    {
+     "nazov": "Odfoť východ slnka.",
+     "text": "A zapíš ho v účte na webe s fotkou."
+    }
+   ]
+  },
+  {
+   "typ": "blok",
+   "stitok": "02 / MEDAILA",
+   "nadpis": "Za jedno ráno.",
+   "blok": "KOVOVÁ\nMEDAILA",
+   "text": "So slnkom vychádzajúcim nad horami.",
+   "maly": "Príde do Z-BOXu, spravidla do 4 týždňov od splnenia."
+  },
+  {
+   "typ": "text",
+   "stitok": "03 / BEZPEČNE",
+   "nadpis": "Za tmy s rozumom.",
+   "text": [
+    "Choď len po **známom chodníku**.",
+    "Vezmi si **čelovku** a teplú vrstvu navyše.",
+    "Na vrchole býva chladnejšie, ako čakáš."
+   ]
+  },
+  {
+   "typ": "koniec",
+   "nadpis": "Koho by si zobral so sebou?",
+   "uvod": "24,99 € + poštovné od 3,50 €. Predaj od",
+   "zvyraznenie": "15. novembra 2026",
+   "text": "Hodí sa aj ako darček."
+  }
+ ]
+}
