@@ -101,10 +101,22 @@ YouTube Shorts zatiaľ nerobíme.
 - 49,99 € za oboch + poštovné od 3,50 €, obe polovice do jedného Z-BOXu
 - Odkaz: vyslapsimedailu.sk/vyzvy/valentinska-dvojica
 
+**Východ slnka na vrchole**
+- Vstaň potme, vyšľap pešo na ktorýkoľvek vrchol alebo kopec (výška nerozhoduje) a počkaj na východ slnka
+- Stačí raz, kedykoľvek od 1. 1. do 30. 9. 2027; zápis v účte s fotkou východu slnka z vrcholu
+- Náročnosť ľahká; za tmy len po známom chodníku a s čelovkou (v obsahu vždy pripomenúť)
+- 24,99 € + poštovné od 3,50 €, kovová medaila so slnkom vychádzajúcim nad horami
+- Hodí sa aj ako darček („vytiahni niekoho von“)
+- Odkaz: vyslapsimedailu.sk/vyzvy/vychod-slnka-2027
+
 **Termíny predaja**
-- Predaj oboch výziev od 15. 11. 2026
+- Od 15. 11. 2026 sa predávajú **tri výzvy**: Novoročných 100, Valentínska dvojica, Východ slnka na vrchole
 - Novoročných 100: kúpiť sa dá do 15. 1. 2027
 - Valentínska dvojica: kúpiť sa dá do 14. 2. 2027
+- Východ slnka na vrchole: kúpiť sa dá do 31. 8. 2027
+
+**Pripravujeme** (na webe s označením „pripravujeme“, kúpiť sa zatiaľ nedajú; v obsahu len ako „pripravujeme“, bez termínov a cien, kým ich Alex nespustí)
+- Tatry 2027 – 5 vrcholov (prémiová kolekcia 5 medailí), Hradná výzva, Tatranské plesá, Cesta SNP, 12 vrcholov za rok
 
 **Výzva ako darček**
 - Pri nákupe sa zvolí „Ako darček“ a zadá sa meno a e-mail obdarovaného
